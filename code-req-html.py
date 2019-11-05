@@ -10,7 +10,7 @@ headers = "Market_Open,Prev,Open,Server_Time,Local_Time \n"
 
 f = open(out_filename, "w")
 f.write(headers)
-for i in range(15):
+for i in range(96):
 	import datetime
 	url = 'https://www.tradingview.com/symbols/MYX-FCPO1%21/'
 	session = HTMLSession()
@@ -36,7 +36,8 @@ for i in range(15):
 	print (result_prev)
 	print (result_open)
 	
+	f = open(out_filename, "a")
 	f.write(result_curr + ", " + result_prev + ", " + result_open + ","+result_server_time+ ","+start_time+ "\n")
-	time.sleep(60)
+	time.sleep(2)
+	f.close()
 
-f.close()
