@@ -17,6 +17,7 @@ for i in range(96):
 	r = session.get(url)
 
 	r.html.render()
+	time.sleep(20)
 
 	num_prev = 'div.tv-fundamental-block__value.js-symbol-prev-close'
 	num_curr = 'div.tv-symbol-price-quote__value.js-symbol-last'
@@ -49,7 +50,7 @@ for i in range(96):
 	r = session.get(url)
 
 	r.html.render()
-
+	time.sleep(20)
 	num_prev = 'div.tv-fundamental-block__value.js-symbol-prev-close'
 	num_curr = 'div.tv-symbol-price-quote__value.js-symbol-last'
 	num_open = 'div.tv-fundamental-block__value.js-symbol-open'
@@ -80,6 +81,7 @@ for i in range(96):
 	r = session.get(url)
 
 	r.html.render()
+	time.sleep(20)
 
 	num_prev = 'div.tv-fundamental-block__value.js-symbol-prev-close'
 	num_curr = 'div.tv-symbol-price-quote__value.js-symbol-last'
