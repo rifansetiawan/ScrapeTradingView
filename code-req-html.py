@@ -42,6 +42,7 @@ for i in range(96):
 	f = open(out_filename, "a")
 	f.write("MYX-FCPO1"+","+result_curr + ", " + result_prev + ", " + result_open + ","+result_server_time+ ","+start_time+ "\n")
 	time.sleep(2)
+	session.close()
 	f.close()
 	#---------------------------------------------------------------------------------------
 	import datetime
@@ -73,6 +74,7 @@ for i in range(96):
 	f = open(out_filename, "a")
 	f.write("ICEEUR-NCF1"+","+result_curr + ", " + result_prev + ", " + result_open + ","+result_server_time+ ","+start_time+ "\n")
 	time.sleep(2)
+	session.close()
 	f.close()
 	#----------------------------------------------------------------------------------
 	import datetime
@@ -107,5 +109,6 @@ for i in range(96):
 	f.write("ICEEUR-ATW1"+","+result_curr + ", " + result_prev + ", " + result_open + ","+result_server_time+ ","+start_time+ "\n")
 	time.sleep(2)
 	f.close()
+	session.close()
 	time.sleep(750)
 
